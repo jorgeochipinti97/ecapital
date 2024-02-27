@@ -82,22 +82,36 @@ export default function Home() {
       />
       <section className="mb-20">
         <div className="w-full flex fixed  right-1 top-1 justify-end mr-5  mt-5">
-          <div className="w-fit  hover:animate-pulsing  rounded-full mx-2 cursor-pointer border-white  p-2 border-2">
-            <svg
-              width={30}
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-            >
-              <path
-                fill="#f5f5f7"
-                fillRule="evenodd"
-                d="M3.5 12a8.5 8.5 0 118.5 8.5 8.455 8.455 0 01-4.542-1.314 1 1 0 00-.821-.113l-2.88.859 1.085-2.537a1 1 0 00-.07-.92A8.456 8.456 0 013.5 12zM12 1.5C6.201 1.5 1.5 6.201 1.5 12c0 1.838.473 3.568 1.305 5.073L1.08 21.107a1 1 0 001.206 1.351l4.5-1.342A10.456 10.456 0 0012 22.5c5.799 0 10.5-4.701 10.5-10.5S17.799 1.5 12 1.5zm2.293 12.682l-1.315.926A9.338 9.338 0 0111 13.585a10.202 10.202 0 01-1.624-2.114l.835-.709a1 1 0 00.236-1.232l-1.064-2a1 1 0 00-1.54-.283l-.316.275c-.759.662-1.208 1.75-.836 2.852A12.049 12.049 0 009.586 15c1.813 1.813 3.655 2.527 4.733 2.805.868.223 1.689-.076 2.268-.548l.591-.482a1 1 0 00-.12-1.634l-1.678-1a1 1 0 00-1.088.041z"
-                clipRule="evenodd"
-              ></path>
-            </svg>
+          <div
+            style={{
+              backdropFilter: "blur(4px)",
+              background: "rgba(0,0,0,0.5)",
+            }}
+            className="w-fit  hover:animate-pulsing  rounded-full mx-2 cursor-pointer border-white  p-2 border-2"
+          >
+            <a href="https://wa.me/+5491130042170">
+              <svg
+                width={30}
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="#f5f5f7"
+                  fillRule="evenodd"
+                  d="M3.5 12a8.5 8.5 0 118.5 8.5 8.455 8.455 0 01-4.542-1.314 1 1 0 00-.821-.113l-2.88.859 1.085-2.537a1 1 0 00-.07-.92A8.456 8.456 0 013.5 12zM12 1.5C6.201 1.5 1.5 6.201 1.5 12c0 1.838.473 3.568 1.305 5.073L1.08 21.107a1 1 0 001.206 1.351l4.5-1.342A10.456 10.456 0 0012 22.5c5.799 0 10.5-4.701 10.5-10.5S17.799 1.5 12 1.5zm2.293 12.682l-1.315.926A9.338 9.338 0 0111 13.585a10.202 10.202 0 01-1.624-2.114l.835-.709a1 1 0 00.236-1.232l-1.064-2a1 1 0 00-1.54-.283l-.316.275c-.759.662-1.208 1.75-.836 2.852A12.049 12.049 0 009.586 15c1.813 1.813 3.655 2.527 4.733 2.805.868.223 1.689-.076 2.268-.548l.591-.482a1 1 0 00-.12-1.634l-1.678-1a1 1 0 00-1.088.041z"
+                  clipRule="evenodd"
+                ></path>
+              </svg>
+            </a>
           </div>
-          <div className="w-fit  hover:animate-pulsing  rounded-full mx-2 cursor-pointer border-white  p-2 border-2">
+          <div
+            style={{
+              backdropFilter: "blur(4px)",
+              background: "rgba(0,0,0,0.5)",
+            }}
+            className="w-fit  hover:animate-pulsing  rounded-full mx-2 cursor-pointer border-white  p-2 border-2"
+          >
             <a href="https://www.instagram.com/ecapital.ar/">
               <svg
                 width={30}
@@ -155,7 +169,7 @@ export default function Home() {
         </div>
       </section>
       <section className="w-screen flex justify-center">
-        <div className="grid grid-cols-1 md:grid-cols-2 w-11/12 min-h-[40vh]  ">
+        <div className="grid grid-cols-1 mt-10 md:mt-0 md:grid-cols-2 w-11/12 min-h-[40vh]  ">
           <div className="flex justify-center flex-col   mt-5 items-center   ">
             <p className="text-center  text-4xl mb-5 font-bold font-geist text-[#f5f5f7] ">
               Aliados estratégicos.
@@ -229,7 +243,7 @@ export default function Home() {
           <img
             src="/merca.png"
             alt=""
-            className="rounded-md w-10/12 md:w-3/12"
+            className="rounded-md w-10/12 md:w-4/12"
           />
 
           <svg
