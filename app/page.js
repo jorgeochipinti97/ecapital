@@ -164,7 +164,7 @@ export default function Home() {
             de tu empresa.
           </p>
           <Button className="mt-5 hover:animate-pulsing text-black hover:bg-violet-400 bg-[#c4b5fd]">
-            Conectate
+            <a href="https://wa.me/+5491130042170">Conectate</a>
           </Button>
         </div>
       </section>
