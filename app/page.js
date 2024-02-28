@@ -150,7 +150,7 @@ export default function Home() {
       </section>
       <section>
         <div className="flex justify-center flex-col items-center">
-          <img src="/logo.png" className="w-3/12 md:w-1/12 mb-5" />
+          <img src="/logo.png" className="w-3/12 bg-white rounded-full md:w-1/12 mb-5" />
           <p
             style={{ letterSpacing: -2 }}
             className="font-sans text-5xl md:text-6xl opacity-[80%]  w-8/12 text-black font-light text-center"
