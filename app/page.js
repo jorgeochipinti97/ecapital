@@ -5,8 +5,9 @@ import { Spotlight } from "./components/ui/Spotlight";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { SliderComponent } from "./components/Slider";
 import { useState } from "react";
+import Lottie from "lottie-react";
+import groovyWalkAnimation from "../animations/shippingtwo.json";
 
 // components/BackgroundVideo.js
 
@@ -150,7 +151,10 @@ export default function Home() {
       </section>
       <section>
         <div className="flex justify-center flex-col items-center">
-          <img src="/logo.png" className="w-3/12 bg-white rounded-full md:w-1/12 mb-5" />
+          <img
+            src="/logo.png"
+            className="w-3/12 bg-white rounded-full md:w-1/12 mb-5"
+          />
           <p
             style={{ letterSpacing: -2 }}
             className="font-sans text-5xl md:text-6xl opacity-[80%]  w-8/12 text-black font-light text-center"
@@ -239,18 +243,44 @@ export default function Home() {
         </div>
       </section>
       <section>
-        <div className="flex justify-around flex-wrap my-5">
-          <img
-            src="/merca.png"
-            alt=""
-            className="rounded-md w-10/12 md:w-4/12"
-          />
-
+        <p className="font-geist font-bold text-white text-center mb-5 md:text-7xl text-4xl">Aceptamos</p>
+        <div className="flex w-screen backdrop-blur-xl justify-around items-center flex-wrap my-5">
+          <img src="/merca.png" alt="" className="rounded-md h-[80px]" />
+          <img src="/airt.png" alt="" className="rounded-md h-[80px] p-2 bg-white" />
+          <img src="/wes.png" alt="" className="rounded-md h-[60px]" />
           <svg
-            width={100}
+            width={70}
+            className="rounded-md mt-5 md:mt-0 bg-white h-fit  p-2"
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="xMidYMid"
+            viewBox="0 -149 512 512"
+          >
+            <path
+              fill="#6772E5"
+              d="M35.982 83.484c0-5.546 4.551-7.68 12.09-7.68 10.808 0 24.461 3.272 35.27 9.103V51.484c-11.804-4.693-23.466-6.542-35.27-6.542C19.2 44.942 0 60.018 0 85.192c0 39.252 54.044 32.995 54.044 49.92 0 6.541-5.688 8.675-13.653 8.675-11.804 0-26.88-4.836-38.827-11.378v33.849c13.227 5.689 26.596 8.106 38.827 8.106 29.582 0 49.92-14.648 49.92-40.106-.142-42.382-54.329-34.845-54.329-50.774zm96.142-66.986l-34.702 7.395-.142 113.92c0 21.05 15.787 36.551 36.836 36.551 11.662 0 20.195-2.133 24.888-4.693V140.8c-4.55 1.849-27.022 8.391-27.022-12.658V77.653h27.022V47.36h-27.022l.142-30.862zm71.112 41.386L200.96 47.36h-30.72v124.444h35.556V87.467c8.39-10.951 22.613-8.96 27.022-7.396V47.36c-4.551-1.707-21.191-4.836-29.582 10.524zm38.257-10.524h35.698v124.444h-35.698V47.36zm0-10.809l35.698-7.68V0l-35.698 7.538V36.55zm109.938 8.391c-13.938 0-22.898 6.542-27.875 11.094l-1.85-8.818h-31.288v165.83l35.555-7.537.143-40.249c5.12 3.698 12.657 8.96 25.173 8.96 25.458 0 48.64-20.48 48.64-65.564-.142-41.245-23.609-63.716-48.498-63.716zm-8.533 97.991c-8.391 0-13.37-2.986-16.782-6.684l-.143-52.765c3.698-4.124 8.818-6.968 16.925-6.968 12.942 0 21.902 14.506 21.902 33.137 0 19.058-8.818 33.28-21.902 33.28zM512 110.08c0-36.409-17.636-65.138-51.342-65.138-33.85 0-54.33 28.73-54.33 64.854 0 42.808 24.179 64.426 58.88 64.426 16.925 0 29.725-3.84 39.396-9.244v-28.445c-9.67 4.836-20.764 7.823-34.844 7.823-13.796 0-26.027-4.836-27.591-21.618h69.547c0-1.85.284-9.245.284-12.658zm-70.258-13.511c0-16.071 9.814-22.756 18.774-22.756 8.675 0 17.92 6.685 17.92 22.756h-36.694z"
+            ></path>
+          </svg>
+          <svg
+            width={70}
+            className="rounded-md mt-5 md:mt-0 bg-white h-fit  p-2"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+          >
+            <g fill="#0F0F0F">
+              <path
+                fillRule="evenodd"
+                d="M10.832 1.248c.746-.33 1.59-.33 2.336 0l8.631 3.827C23.775 5.951 23.17 9 21.021 9H2.979C.83 9 .225 5.951 2.2 5.075l8.632-3.827zm1.557 1.88a.958.958 0 00-.778 0l-8.2 3.636c-.099.043-.068.19.04.19H20.55c.108 0 .139-.147.04-.19l-8.2-3.636z"
+                clipRule="evenodd"
+              ></path>
+              <path d="M2 22a1 1 0 011-1h18a1 1 0 110 2H3a1 1 0 01-1-1zM11 19a1 1 0 102 0v-8a1 1 0 10-2 0v8zM6 20a1 1 0 01-1-1v-8a1 1 0 112 0v8a1 1 0 01-1 1zM17 19a1 1 0 102 0v-8a1 1 0 10-2 0v8z"></path>
+            </g>
+          </svg>
+          <svg
+            width={70}
             xmlns="http://www.w3.org/2000/svg"
             viewBox="-3.5 0 48 48"
-            className="rounded-md mt-5 md:mt-0  p-2 bg-white"
+            className="rounded-md mt-5 md:mt-0 bg-white h-fit  p-2"
           >
             <g>
               <g fill="none" fillRule="evenodd" stroke="none" strokeWidth="1">
@@ -261,62 +291,61 @@ export default function Home() {
             </g>
           </svg>
 
-          <div className="flex flex-col">
-            <svg
-              width={100}
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 -9 58 58"
-            >
-              <g>
-                <rect
-                  width="57"
-                  height="39"
-                  x="0.5"
-                  y="0.5"
-                  fill="#fff"
-                  stroke="#F3F3F3"
-                  rx="3.5"
-                ></rect>
-                <path
-                  fill="#FF5F00"
-                  d="M34.31 28.977H23.96V10.512h10.35v18.465z"
-                ></path>
-                <path
-                  fill="#EB001B"
-                  d="M24.622 19.743c0-3.746 1.767-7.082 4.519-9.232A11.835 11.835 0 0021.829 8C15.296 8 10 13.257 10 19.743c0 6.485 5.296 11.743 11.83 11.743 2.76 0 5.299-.939 7.31-2.511-2.75-2.15-4.518-5.487-4.518-9.232"
-                ></path>
-                <path
-                  fill="#F79E1B"
-                  d="M48.27 19.743c0 6.485-5.296 11.743-11.829 11.743-2.76 0-5.299-.939-7.312-2.511 2.752-2.15 4.52-5.487 4.52-9.232 0-3.746-1.768-7.082-4.52-9.232A11.839 11.839 0 0136.441 8c6.533 0 11.83 5.257 11.83 11.743"
-                ></path>
-              </g>
-            </svg>
-            <svg
-              width={100}
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 -11 70 70"
-            >
-              <g>
-                <rect
-                  width="69"
-                  height="47"
-                  x="0.5"
-                  y="0.5"
-                  fill="#fff"
-                  stroke="#D9D9D9"
-                  rx="5.5"
-                ></rect>
-                <path
-                  fill="#172B85"
-                  fillRule="evenodd"
-                  d="M21.25 32.517h-4.24l-3.18-12.132c-.151-.558-.472-1.052-.943-1.284-1.176-.584-2.473-1.05-3.887-1.284v-.467h6.831c.943 0 1.65.701 1.768 1.516l1.65 8.751 4.239-10.267h4.122l-6.36 15.166zm8.718 0h-4.005L29.26 17.35h4.005l-3.297 15.166zm8.479-10.966c.118-.816.825-1.284 1.65-1.284 1.296-.117 2.708.118 3.887.7l.707-3.265A10.138 10.138 0 0041.039 17c-3.887 0-6.715 2.1-6.715 5.017 0 2.218 2.003 3.382 3.418 4.084 1.53.7 2.119 1.166 2.001 1.866 0 1.05-1.178 1.517-2.355 1.517-1.414 0-2.828-.35-4.123-.935l-.707 3.268c1.414.582 2.944.817 4.359.817 4.358.115 7.067-1.984 7.067-5.134 0-3.967-5.537-4.2-5.537-5.949zM58 32.517L54.82 17.35h-3.416c-.707 0-1.414.467-1.65 1.166l-5.888 14h4.123l.823-2.216h5.065l.472 2.216H58zm-6.006-11.083l1.176 5.716h-3.298l2.122-5.716z"
-                  clipRule="evenodd"
-                ></path>
-              </g>
-            </svg>
-          </div>
+          <svg
+            width={70}
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 -9 58 58"
+          >
+            <g>
+              <rect
+                width="57"
+                height="39"
+                x="0.5"
+                y="0.5"
+                fill="#fff"
+                stroke="#F3F3F3"
+                rx="3.5"
+              ></rect>
+              <path
+                fill="#FF5F00"
+                d="M34.31 28.977H23.96V10.512h10.35v18.465z"
+              ></path>
+              <path
+                fill="#EB001B"
+                d="M24.622 19.743c0-3.746 1.767-7.082 4.519-9.232A11.835 11.835 0 0021.829 8C15.296 8 10 13.257 10 19.743c0 6.485 5.296 11.743 11.83 11.743 2.76 0 5.299-.939 7.31-2.511-2.75-2.15-4.518-5.487-4.518-9.232"
+              ></path>
+              <path
+                fill="#F79E1B"
+                d="M48.27 19.743c0 6.485-5.296 11.743-11.829 11.743-2.76 0-5.299-.939-7.312-2.511 2.752-2.15 4.52-5.487 4.52-9.232 0-3.746-1.768-7.082-4.52-9.232A11.839 11.839 0 0136.441 8c6.533 0 11.83 5.257 11.83 11.743"
+              ></path>
+            </g>
+          </svg>
+          <svg
+            width={70}
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 -11 70 70"
+
+          >
+            <g>
+              <rect
+                width="69"
+                height="47"
+                x="0.5"
+                y="0.5"
+                fill="#fff"
+                stroke="#D9D9D9"
+                rx="5.5"
+              ></rect>
+              <path
+                fill="#172B85"
+                fillRule="evenodd"
+                d="M21.25 32.517h-4.24l-3.18-12.132c-.151-.558-.472-1.052-.943-1.284-1.176-.584-2.473-1.05-3.887-1.284v-.467h6.831c.943 0 1.65.701 1.768 1.516l1.65 8.751 4.239-10.267h4.122l-6.36 15.166zm8.718 0h-4.005L29.26 17.35h4.005l-3.297 15.166zm8.479-10.966c.118-.816.825-1.284 1.65-1.284 1.296-.117 2.708.118 3.887.7l.707-3.265A10.138 10.138 0 0041.039 17c-3.887 0-6.715 2.1-6.715 5.017 0 2.218 2.003 3.382 3.418 4.084 1.53.7 2.119 1.166 2.001 1.866 0 1.05-1.178 1.517-2.355 1.517-1.414 0-2.828-.35-4.123-.935l-.707 3.268c1.414.582 2.944.817 4.359.817 4.358.115 7.067-1.984 7.067-5.134 0-3.967-5.537-4.2-5.537-5.949zM58 32.517L54.82 17.35h-3.416c-.707 0-1.414.467-1.65 1.166l-5.888 14h4.123l.823-2.216h5.065l.472 2.216H58zm-6.006-11.083l1.176 5.716h-3.298l2.122-5.716z"
+                clipRule="evenodd"
+              ></path>
+            </g>
+          </svg>
         </div>
       </section>
       <section className="grid grid-cols-1 md:grid-cols-2 w-screen">
@@ -415,12 +444,16 @@ export default function Home() {
               <Button onClick={redirectToTrackingPage}>Buscar</Button>
             </div>
           </div>
+          <Lottie animationData={groovyWalkAnimation} loop={true} />
 
           {/* <div className="">
             <SliderComponent />
           </div> */}
         </div>
       </section>
+      {/* <section>
+        <Lottie animationData={groovyWalkAnimation} loop={true} />
+      </section> */}
     </main>
   );
 }
