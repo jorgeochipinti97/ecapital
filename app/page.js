@@ -148,7 +148,7 @@ export default function Home() {
           />
           <p
             style={{  }}
-            className="font-geist tracking-tighter text-3xl md:text-6xl  opacity-[80%]  w-8/12 text-black font-light text-center"
+            className="font-geist tracking-tighter text-3xl md:text-6xl  opacity-[80%] w-10/12 md:w-8/12 text-black font-light text-center"
           >
             <span className="text-[#f5f5f7] font-semibold"> ¡Conectando </span>
             <span className="text-white">tu negocio con el </span>
@@ -421,7 +421,7 @@ export default function Home() {
             <div className="flex flex-col ">
               <Label
                 htmlFor="name"
-                className="text-white mb-2 text-center font-geist text-4xl"
+                className="text-white mb-2 text-center font-geist text-2xl md:text-4xl"
               >
                 Rastrear tu envío.
               </Label>
